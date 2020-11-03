@@ -9,7 +9,8 @@ public class PlayerMove : MonoBehaviour {
     GameManager gameManager;
 
     // Walk
-    public float maxSpeed;
+    [SerializeField]
+    public static float maxSpeed;
 
     //Jump
     [SerializeField]
@@ -44,10 +45,15 @@ public class PlayerMove : MonoBehaviour {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+
+
         jumpCount = maxJump;
         canSlide = true;
+
+        // Player Stat
         MaxHp = 3;
         currentHp = MaxHp;
+        maxSpeed = 5f;
     }
 
     void Update() {

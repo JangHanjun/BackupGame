@@ -6,7 +6,6 @@ public class playerAttack : MonoBehaviour
 {
     public GameObject bullet;
     public Transform pos;    
-    [SerializeField]
     public static float atk;
 
     public float coolTime;

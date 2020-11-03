@@ -11,9 +11,16 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag =="Player"){
-            Debug.Log("플레이어 감지!");
+            Debug.Log("속도 증가");
+            Destroy(gameObject);
+            PlayerMove.maxSpeed *= 3;
+        }
+        /*
+        if(collision.gameObject.tag =="Player"){
+            Debug.Log("공격력 증가");
             Destroy(gameObject);
             playerAttack.atk += 1;
         }
+        */
     }
 }
