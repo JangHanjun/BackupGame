@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\AttackingMonster.cs" />
+     <Compile Include="Assets\Script\EnemyDamaged.cs" />
      <Compile Include="Assets\Script\Item.cs" />
      <Compile Include="Assets\Script\MovingPlatform.cs" />
      <Compile Include="Assets\Script\bullet.cs" />
@@ -54,7 +55,7 @@
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\MonsterSKill.cs" />
-     <Compile Include="Assets\Script\EnemyDamaged.cs" />
+     <Compile Include="Assets\Script\Ui.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

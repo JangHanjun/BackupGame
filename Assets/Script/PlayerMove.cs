@@ -38,8 +38,8 @@ public class PlayerMove : MonoBehaviour {
     //public float slidingPower;
 
     // Stat
-    public int MaxHp;
-    public int currentHp;
+    public static float MaxHp;
+    public static float currentHp;  // 위 두개의 변수를  int로 하니 slider에서 못알아듣더라
 
     void Awake() {
         rigid = GetComponent<Rigidbody2D>();
@@ -160,7 +160,7 @@ public class PlayerMove : MonoBehaviour {
     }
     void playerDamaged(Vector2 enemyPos) {
         // Hp decrease
-        currentHp -= 1;
+        currentHp -= 1f;
         // Game Over Check
         if (currentHp < 1) {
             GameManager.Instance.GameOver();
